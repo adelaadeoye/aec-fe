@@ -19,7 +19,7 @@ export const StyledMenu = styled.nav`
     }
 
   a {
-    font-size: 2rem;
+    font-size: 1.0rem;
     text-transform: uppercase;
     padding: 2rem 0;
     font-weight: bold;
@@ -29,7 +29,7 @@ export const StyledMenu = styled.nav`
     transition: color 0.3s linear;
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
-      font-size: 1.5rem;
+      font-size: 1rem;
       text-align: center;
     }
 

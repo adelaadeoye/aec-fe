@@ -11,20 +11,27 @@ export const Menu = ({ open, ...props }) => {
   useEffect(() => {
     props.menuAction(open)
   }, [open]);
-console.log("I am menu status",props.menuOpen)
   return (
     <>
       <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
         <a href="/" tabIndex={tabIndex}>
-          <span aria-hidden="true">💁🏻‍♂️</span>
+         
           About us
         </a>
         <a href="/" tabIndex={tabIndex}>
-          <span aria-hidden="true">💸</span>
+      
           Sectors
         </a>
         <a href="/" tabIndex={tabIndex}>
-          <span aria-hidden="true">📩</span>
+        
+          Projects
+        </a>
+        <a href="/" tabIndex={tabIndex}>
+       
+          Blog
+        </a>
+        <a href="/" tabIndex={tabIndex}>
+         
           Contact
         </a>
       </StyledMenu>
