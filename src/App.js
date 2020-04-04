@@ -17,7 +17,7 @@ function App() {
   const menuId = "main-menu";
 
   useOnClickOutside(node, () => setOpen(false));
-
+console.log(node)
   return (
     <ThemeProvider theme={theme}>
       <>
