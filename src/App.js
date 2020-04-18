@@ -19,10 +19,10 @@ function App() {
   useOnClickOutside(node, () => setOpen(false));
   return (
     <ThemeProvider theme={theme}>
-     
-        <div className="logo">
-          <img src={logo} alt="logo" />
-        </div>
+     {/* <div className="logo">
+        <img src={logo} alt="logo" />
+      </div>
+        */}
         <div ref={node}>
           <FocusLock disabled={!open}>
             <Burger open={open} setOpen={setOpen} aria-controls={menuId} />

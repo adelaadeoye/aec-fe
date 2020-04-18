@@ -14,8 +14,9 @@ import BackgroundSlider from "react-background-slider";
 import image1 from "../images/image1.jpg";
 import image2 from "../images/image2.jpg";
 import image3 from "../images/image3.jpg";
-import image4 from "../images/image4.jpg";
 import image5 from "../images/image5.jpg";
+import logo from "../images/logo.png";
+
 const Modal = posed.div({
   enter: {
     y: 0,
@@ -83,7 +84,12 @@ class Home extends Component {
     let { isVisible, slides, currentSlide, ace } = this.state;
 
     return (
+      
+    
       <div className="container">
+        <div className="logo">
+        <img src={logo} alt="logo" />
+      </div>
         <div className="display">
           {this.props.setOpen ? (
             <PoseGroup>
@@ -126,6 +132,7 @@ class Home extends Component {
           <FaLinkedinIn />
         </div>
       </div>
+      
     );
   }
 }

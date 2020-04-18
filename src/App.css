@@ -38,8 +38,37 @@
 }
 
 .logo{
-  margin-left: 10px;
-  margin-top: 15px;
+  padding-left: 10px;
   position: fixed;
+  width: 100%;
 
 }
+.logo-others{
+  padding-left: 10px;
+  position: fixed;
+  width: 100%;
+  background-color:white;
+
+}
+
+/* const [navBackground, setNavBackground] = useState(false)
+  const navRef = useRef()
+  navRef.current = navBackground
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 670
+      if (navRef.current !== show) {
+        setNavBackground(show)
+      }
+    }
+    document.addEventListener('scroll', handleScroll)
+    return () => {
+      document.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+//then
+<Navbar
+    backgroundColor={navBackground ? 'white' : 'transparent'}
+    style={{ transition: '1s ease' }}
+  /> */
