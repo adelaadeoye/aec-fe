@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import posed, { PoseGroup } from "react-pose";
 import SplitText from "react-pose-text";
 import { connect } from "react-redux";
@@ -14,7 +13,6 @@ import BackgroundSlider from "react-background-slider";
 import image1 from "../images/image1.jpg";
 import image2 from "../images/image2.jpg";
 import image3 from "../images/image3.jpg";
-import image5 from "../images/image5.jpg";
 import logo from "../images/logo.png";
 
 const Modal = posed.div({
@@ -36,13 +34,7 @@ const Modal = posed.div({
   },
 });
 
-const Shade = posed.div({
-  enter: { opacity: 1 },
-  exit: { opacity: 0 },
-  transition: {
-    default: { duration: 300 },
-  },
-});
+
 
 const charPoses = {
   exit: { opacity: 0, x: 20 },
@@ -81,7 +73,7 @@ class Home extends Component {
   }
 
   render() {
-    let { isVisible, slides, currentSlide, ace } = this.state;
+    let { isVisible, slides, currentSlide } = this.state;
 
     return (
       
