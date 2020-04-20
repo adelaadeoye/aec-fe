@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "30px",
     fontSize: "1.1rem",
     marginTop: "200px",
-    textAlign: "justify",
+    // textAlign: "justify",
   },
   clients: {
     fontFamily: "'Dosis', sans-serif",
@@ -67,15 +67,15 @@ export default function About() {
   const [navBack, setNavBack] = useState("");
   useEffect(() => {
     document.addEventListener("scroll", () => {
-      const backgroundColor = window.scrollY < 400 ? "" : "white";
+      const backgroundColor = window.scrollY < 400 ? "10, 10, 10, 0.8" : "255, 255, 255, 1";
       setNavBack(backgroundColor);
     });
   }, []);
-  console.log(navBack);
   return (
     <div className="about-wrapper">
       <div className="section-one">
-        <div className="logo" style={{ backgroundColor: `${navBack}` }}>
+        <div className="logo" style={{   background:`linear-gradient(rgba(${navBack}), rgba(${navBack}))`
+        }}>
           <img src={logo} alt="logo" />
         </div>
         <div className="section-one-content">
@@ -215,11 +215,15 @@ export default function About() {
                   <img src={associates} alt="associates" />
                   <br></br>
                   <Typography variant="p" className={classes.consortium}>
-                    Anim labore id non pariatur veniam nulla sint occaecat
-                    consequat. Elit voluptate fugiat duis et nulla sit. Amet
-                    minim dolor officia qui. Tempor ut id est nostrud sunt
-                    officia consequat. Non consequat do ipsum Lorem qui nisi.
-                    Proident adipisicing nulla qui enim.
+                   At AEC Associates, we are focused on achieving client’s goals through detailed architectural design work, our scope of services ranges from feasibility studies and project conception to project execution and management.
+
+We consider the architectural thought process as a discovery, constantly searching for appropriate, modern and durable solution for our clients. Our difference lies in the deliberate, thoughtful and painstaking thoroughness that lays at the heart of our designs and building solutions.
+
+We offer a joined up design and architectural service, which enables the client to trust in our ability to deliver the end product which they require, to the budget that is required and within the timeframe agreed.
+
+Our approach is unique, a disciplined process which is based on client input and expectations. We will tailor a customized project plan based on your design performance, schedule, quality, sustainability and budget priorities. We work closely with you to evaluate the best delivery method to fit your needs.
+
+In working with you, we will assemble a team of members best adopted for your project, and appoint a manager who will be your chief contact and available at all times.
                   </Typography>{" "}
                 </Grid>
                 <Grid item xs="12" sm="12">
@@ -248,11 +252,13 @@ export default function About() {
                   <img src={real} alt="associates" />
                   <br></br>
                   <Typography variant="p" className={classes.consortium}>
-                    Anim labore id non pariatur veniam nulla sint occaecat
-                    consequat. Elit voluptate fugiat duis et nulla sit. Amet
-                    minim dolor officia qui. Tempor ut id est nostrud sunt
-                    officia consequat. Non consequat do ipsum Lorem qui nisi.
-                    Proident adipisicing nulla qui enim.
+                  AEC Properties offer a full-service, one-stop shop for all your real estate needs. Our single service is to assist our clients with the acquisition, management and disposition of real estate. We have experience managing all aspects of the real estate project by providing a fully integrated real estate solution to our clients.
+
+We actively employ a methodology of integrated project delivery which leverages technology and collaboration with our sister firms which allows our development team to fully model and plan a project prior to development. A process which saves time reduces costs and minimizes risks.
+
+At AEC, we are committed to delivering the highest quality of services, as efficiently as possible, in order to provide value to our clients and to promote a long-term, mutually successful relationship.
+
+Our team of professionals in real estate management brings a unique approach to asset, property and facility management. We have the experience, resources and relationships necessary to manage each phase of the real estate process, a proven team delivery process for bringing buildings to full occupancy more rapidly, efficiently and cost effectively.
                   </Typography>{" "}
                 </Grid>
               </Grid>

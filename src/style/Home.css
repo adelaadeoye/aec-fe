@@ -21,6 +21,9 @@
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+  background-color: linear-gradient(-180deg, #ff1c68 0%, #9f0092 98%);
+
+  
 }
 .display {
   display: flex;
@@ -30,6 +33,7 @@
   font-family: PT Sans, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 200;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2); 
+  
   color: white;
 }
 .socialHandle {
