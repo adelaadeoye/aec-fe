@@ -17,7 +17,7 @@ import associates from "../images/associates.png";
 import built from "../images/built.png";
 import engineering from "../images/engineering.png";
 import real from "../images/real.png";
-
+import CountUp from 'react-countup';
 const useStyles = makeStyles((theme) => ({
   paragraph: {
     fontFamily: "'Dosis', sans-serif",
@@ -80,7 +80,7 @@ export default function About() {
         </div>
         <div className="section-one-content">
           <Grid container spacing={2} className={classes.container}>
-            <Grid item xs="12" sm="6">
+            <Grid item xs="12" sm="6" md="6" lg="6" >
               <Typography variant="h4">
                 {" "}
                 [
@@ -117,9 +117,9 @@ export default function About() {
                 <FaLinkedinIn />
               </div>
             </Grid>
-            <Grid item xs="12" sm="6">
+            <Grid item xs="12" sm="6" md="6" lg="6">
               <Grid container spacing={2}>
-                <Grid item xs="12" sm="12">
+                <Grid item xs="12" sm="12" md="12" lg="12">
                   <Typography variant="h4">
                     [
                     <span className="icons">
@@ -136,7 +136,7 @@ export default function About() {
                     solutions package
                   </Typography>{" "}
                 </Grid>
-                <Grid item xs="12" sm="12">
+                <Grid item xs="12" sm="12" md="12" lg="12">
                   <div className={classes.found}>
                     <Typography variant="h4">
                       {" "}
@@ -174,7 +174,7 @@ export default function About() {
       <div className="section-two">
         <div className="section-two-content">
           <Grid container spacing={2} className={classes.container}>
-            <Grid item xs="12" sm="6">
+            <Grid item xs="12" sm="6" md="6" lg="6">
               <Typography variant="h4" className={classes.head}>
                 OUR CLIENTS
               </Typography>
@@ -196,14 +196,14 @@ export default function About() {
 
               <Typography variant="h5" className={classes.clients}>
                 Top clients
-              </Typography>
+<CountUp delay={2} end={100} />              </Typography>
 
               <img src={clients} alt="clients" className="clients" />
             </Grid>
     
-            <Grid item xs="12" sm="6">
+            <Grid item xs="12" sm="6" md="6" lg="6">
               <Grid container spacing={2}>
-                <Grid item xs="12" sm="12">
+                <Grid item xs="12" sm="12" md="12" lg="12">
                   <Typography variant="h4" className={classes.head}>
                     CONSORTIUM{" "}
                   </Typography>
@@ -211,7 +211,7 @@ export default function About() {
                     The AEC consortium comprise of the following:
                   </Typography>{" "}
                 </Grid>
-                <Grid item xs="12" sm="12">
+                <Grid item xs="12" sm="12" md="12" lg="12">
                   <img src={associates} alt="associates" />
                   <br></br>
                   <Typography variant="p" className={classes.consortium}>
@@ -226,7 +226,7 @@ Our approach is unique, a disciplined process which is based on client input and
 In working with you, we will assemble a team of members best adopted for your project, and appoint a manager who will be your chief contact and available at all times.
                   </Typography>{" "}
                 </Grid>
-                <Grid item xs="12" sm="12">
+                <Grid item xs="12" sm="12" md="12" lg="12">
                   <img src={engineering} alt="associates" />
                   <br></br>
                   <Typography variant="p" className={classes.consortium}>
@@ -237,7 +237,7 @@ In working with you, we will assemble a team of members best adopted for your pr
                     Proident adipisicing nulla qui enim.
                   </Typography>{" "}
                 </Grid>
-                <Grid item xs="12" sm="12">
+                <Grid item xs="12" sm="12" md="12" lg="12">
                   <img src={built} alt="associates" />
                   <br></br>
                   <Typography variant="p" className={classes.consortium}>
@@ -248,7 +248,7 @@ In working with you, we will assemble a team of members best adopted for your pr
                     Proident adipisicing nulla qui enim.
                   </Typography>{" "}
                 </Grid>
-                <Grid item xs="12" sm="12">
+                <Grid item xs="12" sm="12" md="12" lg="12">
                   <img src={real} alt="associates" />
                   <br></br>
                   <Typography variant="p" className={classes.consortium}>
