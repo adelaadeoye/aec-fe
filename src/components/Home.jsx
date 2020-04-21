@@ -34,8 +34,6 @@ const Modal = posed.div({
   },
 });
 
-
-
 const charPoses = {
   exit: { opacity: 0, x: 20 },
   enter: {
@@ -76,12 +74,10 @@ class Home extends Component {
     let { isVisible, slides, currentSlide } = this.state;
 
     return (
-      
-    
       <div className="container">
         <div className="logo">
-        <img src={logo} alt="logo" />
-      </div>
+          <img src={logo} alt="logo" />
+        </div>
         <div className="display">
           {this.props.setOpen ? (
             <PoseGroup>
@@ -124,7 +120,6 @@ class Home extends Component {
           <FaLinkedinIn />
         </div>
       </div>
-      
     );
   }
 }

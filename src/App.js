@@ -9,7 +9,7 @@ import { theme } from "./theme";
 import Burger from "./components/Burger/Burger";
 import Menu from "./components/Menu/Menu";
 import FocusLock from "react-focus-lock";
-import logo from "./images/logo.png";
+// import logo from "./images/logo.png";
 
 function App() {
   const [open, setOpen] = useState(false);
